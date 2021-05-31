@@ -94,3 +94,10 @@ Remove and return an arbitrary (key, value) pair from the dictionary.
 key in d
 d.has_key(key)
 d.get(key,default=None)
+
+dict={}
+dict.get('python') #返回None
+dict.get('python', default=None) #直接报错，这个错误在某些情况没有任何提示！让我找了好久bug
+dict.get('python', default='HHHH'）#直接报错
+dict.get('python', 'HHHH') 返回HHHH
+# 错误提示 dict.get() takes no keyword arguments
