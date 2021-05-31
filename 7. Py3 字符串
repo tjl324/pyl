@@ -383,7 +383,7 @@ str1 in str
 str.find(str1)
        find(str, beg=0, end=len(string))
        检测 str 是否包含在字符串中，如果指定范围 beg 和 end ，则检查是否包含在指定范围内，如果包含返回开始的索引值，否则返回-1
-index(str, beg=0, end=len(string))
+str.index(str1, beg=0, end=len(string))
        跟find()方法一样，只不过如果str不在字符串中会报一个异常。
-count(str, beg= 0,end=len(string))
+str.count(str1, beg= 0,end=len(string))
        返回 str 在 string 里面出现的次数，如果 beg 或者 end 指定则返回指定范围内 str 出现的次数
